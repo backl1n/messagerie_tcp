@@ -28,13 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.Button parametre;
+            this.connection = new System.Windows.Forms.Button();
+            parametre = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // connection
+            // 
+            this.connection.Location = new System.Drawing.Point(114, 113);
+            this.connection.Name = "connection";
+            this.connection.Size = new System.Drawing.Size(153, 35);
+            this.connection.TabIndex = 0;
+            this.connection.Text = "se connecter";
+            this.connection.UseVisualStyleBackColor = true;
+            this.connection.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // parametre
+            // 
+            parametre.Location = new System.Drawing.Point(114, 224);
+            parametre.Name = "parametre";
+            parametre.Size = new System.Drawing.Size(153, 32);
+            parametre.TabIndex = 1;
+            parametre.Text = "parametre";
+            parametre.UseVisualStyleBackColor = true;
+            parametre.Click += new System.EventHandler(this.parametre_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(402, 390);
+            this.Controls.Add(parametre);
+            this.Controls.Add(this.connection);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button connection;
     }
 }
 

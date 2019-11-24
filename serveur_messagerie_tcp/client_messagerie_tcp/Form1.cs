@@ -15,6 +15,23 @@ namespace client_messagerie_tcp
         public Form1()
         {
             InitializeComponent();
+           
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 f = new Form1();
+            this.Hide();
+            Form Form2 = new Form2();  
+            Form2.Show();
+            
+
+        }
+
+        private void parametre_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
+
