@@ -30,7 +30,10 @@ namespace client_messagerie_tcp
 
         private void parametre_Click(object sender, EventArgs e)
         {
-
+            Form1 f = new Form1();
+            this.Hide();
+            Form Form3 = new Form3();
+            Form3.Show();
         }
     }
 }
