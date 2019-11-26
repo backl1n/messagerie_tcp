@@ -16,5 +16,10 @@ namespace client_messagerie_tcp
         {
             InitializeComponent();
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
